@@ -1,0 +1,133 @@
+{
+  "metrics": {
+    "Accuracy": 0.8436,
+    "Precision": 0.806,
+    "Recall": 0.7826,
+    "F1-score": 0.7941,
+    "ROC-AUC": 0.8978
+  },
+  "confusion_matrix": [
+    [
+      97,
+      13
+    ],
+    [
+      15,
+      54
+    ]
+  ],
+  "coefficients": [
+    {
+      "feature": "Sex_male",
+      "coefficient": -2.4308,
+      "odds_ratio": 0.088
+    },
+    {
+      "feature": "Pclass_3",
+      "coefficient": -1.829,
+      "odds_ratio": 0.1606
+    },
+    {
+      "feature": "Pclass_2",
+      "coefficient": -0.7854,
+      "odds_ratio": 0.456
+    },
+    {
+      "feature": "Embarked_S",
+      "coefficient": -0.515,
+      "odds_ratio": 0.5975
+    },
+    {
+      "feature": "Age",
+      "coefficient": -0.4645,
+      "odds_ratio": 0.6285
+    },
+    {
+      "feature": "SibSp",
+      "coefficient": -0.3217,
+      "odds_ratio": 0.7249
+    },
+    {
+      "feature": "Embarked_Q",
+      "coefficient": -0.1211,
+      "odds_ratio": 0.8859
+    },
+    {
+      "feature": "Parch",
+      "coefficient": -0.0558,
+      "odds_ratio": 0.9457
+    },
+    {
+      "feature": "Fare",
+      "coefficient": 0.1012,
+      "odds_ratio": 1.1065
+    }
+  ],
+  "significance": [
+    {
+      "feature": "Age",
+      "coefficient": -0.039,
+      "odds_ratio": 0.9617,
+      "p_value": 0.0,
+      "significant (p<0.05)": "Yes"
+    },
+    {
+      "feature": "SibSp",
+      "coefficient": -0.2983,
+      "odds_ratio": 0.7421,
+      "p_value": 0.0102,
+      "significant (p<0.05)": "Yes"
+    },
+    {
+      "feature": "Parch",
+      "coefficient": -0.0726,
+      "odds_ratio": 0.93,
+      "p_value": 0.5732,
+      "significant (p<0.05)": "No"
+    },
+    {
+      "feature": "Fare",
+      "coefficient": 0.001,
+      "odds_ratio": 1.001,
+      "p_value": 0.6787,
+      "significant (p<0.05)": "No"
+    },
+    {
+      "feature": "Pclass_2",
+      "coefficient": -1.0013,
+      "odds_ratio": 0.3674,
+      "p_value": 0.0019,
+      "significant (p<0.05)": "Yes"
+    },
+    {
+      "feature": "Pclass_3",
+      "coefficient": -2.08,
+      "odds_ratio": 0.1249,
+      "p_value": 0.0,
+      "significant (p<0.05)": "Yes"
+    },
+    {
+      "feature": "Sex_male",
+      "coefficient": -2.5748,
+      "odds_ratio": 0.0762,
+      "p_value": 0.0,
+      "significant (p<0.05)": "Yes"
+    },
+    {
+      "feature": "Embarked_Q",
+      "coefficient": -0.1477,
+      "odds_ratio": 0.8627,
+      "p_value": 0.726,
+      "significant (p<0.05)": "No"
+    },
+    {
+      "feature": "Embarked_S",
+      "coefficient": -0.5434,
+      "odds_ratio": 0.5808,
+      "p_value": 0.0385,
+      "significant (p<0.05)": "Yes"
+    }
+  ],
+  "n_train": 712,
+  "n_test": 179
+}

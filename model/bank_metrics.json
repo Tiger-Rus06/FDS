@@ -1,0 +1,140 @@
+{
+  "table": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.8983,
+      "Precision": 0.6355,
+      "Recall": 0.2274,
+      "F1-score": 0.3349,
+      "ROC-AUC": 0.7973
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.8986,
+      "Precision": 0.6004,
+      "Recall": 0.2996,
+      "F1-score": 0.3997,
+      "ROC-AUC": 0.7906
+    },
+    {
+      "Model": "KNN",
+      "Accuracy": 0.8906,
+      "Precision": 0.5257,
+      "Recall": 0.2974,
+      "F1-score": 0.3799,
+      "ROC-AUC": 0.729
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.8981,
+      "Precision": 0.6226,
+      "Recall": 0.2435,
+      "F1-score": 0.3501,
+      "ROC-AUC": 0.8006
+    }
+  ],
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        7187,
+        121
+      ],
+      [
+        717,
+        211
+      ]
+    ],
+    "Decision Tree": [
+      [
+        7123,
+        185
+      ],
+      [
+        650,
+        278
+      ]
+    ],
+    "KNN": [
+      [
+        7059,
+        249
+      ],
+      [
+        652,
+        276
+      ]
+    ],
+    "Random Forest": [
+      [
+        7171,
+        137
+      ],
+      [
+        702,
+        226
+      ]
+    ]
+  },
+  "thresholds": [
+    {
+      "Threshold": 0.5,
+      "Customers to call": 363,
+      "Precision": 0.6226,
+      "Recall": 0.2435,
+      "F1-score": 0.3501
+    },
+    {
+      "Threshold": 0.4,
+      "Customers to call": 590,
+      "Precision": 0.5644,
+      "Recall": 0.3588,
+      "F1-score": 0.4387
+    },
+    {
+      "Threshold": 0.3,
+      "Customers to call": 945,
+      "Precision": 0.491,
+      "Recall": 0.5,
+      "F1-score": 0.4955
+    },
+    {
+      "Threshold": 0.2,
+      "Customers to call": 1238,
+      "Precision": 0.4459,
+      "Recall": 0.5948,
+      "F1-score": 0.5097
+    },
+    {
+      "Threshold": 0.15,
+      "Customers to call": 1410,
+      "Precision": 0.4099,
+      "Recall": 0.6228,
+      "F1-score": 0.4944
+    },
+    {
+      "Threshold": 0.1,
+      "Customers to call": 2007,
+      "Precision": 0.3194,
+      "Recall": 0.6907,
+      "F1-score": 0.4368
+    }
+  ],
+  "top20_capture": 0.6552,
+  "top20_rate": 0.3692,
+  "importance": {
+    "euribor3m": 0.1451,
+    "nr.employed": 0.1199,
+    "age": 0.0805,
+    "pdays": 0.0708,
+    "emp.var.rate": 0.0577,
+    "cons.conf.idx": 0.0526,
+    "poutcome_success": 0.05,
+    "cons.price.idx": 0.0481,
+    "campaign": 0.0338,
+    "previous": 0.0222
+  },
+  "n_rows": 41176,
+  "n_train": 32940,
+  "n_test": 8236,
+  "n_features_encoded": 62
+}
